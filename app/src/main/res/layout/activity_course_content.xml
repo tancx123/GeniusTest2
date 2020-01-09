@@ -86,7 +86,7 @@
                 android:fontFamily="@font/roboto"/>
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/topicCovered"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -96,34 +96,6 @@
                 android:paddingTop="8dp"
                 android:paddingRight="10dp"
                 android:text="@string/topicCover" />
-
-            <TextView
-                android:id="@+id/TopicOne"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/roboto"
-                android:text="Binary"
-                android:textColor="@android:color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/btnTopicOne"
-                android:layout_width="250dp"
-                android:layout_height="150dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/course_button"
-                android:backgroundTint="@android:color/white"
-                android:drawableTop="@drawable/ic_science"
-                android:gravity="center"
-                android:paddingTop="10dp"
-                android:text="@string/topicContent"
-                android:textColor="@android:color/black" />
 
         </LinearLayout>
 

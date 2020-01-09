@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tutor_navigation"
+    app:startDestination="@+id/navigation_tutorCourse">
+
+    <fragment
+        android:id="@+id/navigation_tutorCourse"
+        android:name="com.example.test.ui.tutor.TutorCourse"
+        android:label="fragment_tutor_course"
+        tools:layout="@layout/fragment_tutor_course" />
+</navigation>

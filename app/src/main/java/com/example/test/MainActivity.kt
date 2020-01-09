@@ -17,6 +17,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import androidx.core.view.GravityCompat
+import com.example.test.ui.tutor.Tutor
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -57,10 +58,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return NavigationUI.navigateUp(navController, appBarConfiguration)
     }
 
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId) {
-            R.id.aboutUsFragment -> startActivity(Intent(this, AboutUs::class.java))
+            R.id.aboutUsFragment -> startActivity(Intent(this, Tutor::class.java))
             R.id.searchFragment -> Toast.makeText(this, "Clicked item two", Toast.LENGTH_SHORT).show()
             R.id.accSettingsFragment -> Toast.makeText(this, "Clicked item three", Toast.LENGTH_SHORT).show()
         }
@@ -82,6 +84,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
             builder.setPositiveButton("Yes" , DialogInterface.OnClickListener { dialog, i ->
                 finish()
+                finishAffinity()
             })
 
             val dialog = builder.create()

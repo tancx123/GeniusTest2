@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".FinishCourse"></activity>
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -19,35 +20,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
         <activity
             android:name=".AboutUs"
-            android:label="@string/genius">
-        </activity>
-
+            android:label="@string/genius"></activity>
         <activity
             android:name=".ui.quiz.QuizQuestion"
             android:configChanges="orientation|screenSize"
-            android:label="@string/quiz">
-        </activity>
-
-        <activity
-            android:name=".ui.quiz.QuizResult"
-            >
-        </activity>
-
-        <activity android:name=".Register"></activity>
+            android:label="@string/quiz"></activity>
+        <activity android:name=".ui.quiz.QuizResult"></activity>
+        <activity android:name=".Register" />
         <activity android:name=".Forgot_Password" />
         <activity android:name=".Login1" />
-        <activity android:name=".MainMain"></activity>
-
+        <activity android:name=".MainMain" />
         <activity android:name=".ui.course.LogicGates" />
         <activity android:name=".ui.course.ComputerScience" />
         <activity android:name=".ui.course.CourseContent" />
+        <activity android:name=".ui.tutor.AddCourse" />
+        <activity android:name=".ui.tutor.Tutor" />
+        <activity android:name=".ui.tutor.AddTopicDetail" />
     </application>
-
-
 
 </manifest>
